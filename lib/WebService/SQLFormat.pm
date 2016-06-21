@@ -1,5 +1,3 @@
-use strict;
-use warnings;
 package WebService::SQLFormat;
 
 use Moo;

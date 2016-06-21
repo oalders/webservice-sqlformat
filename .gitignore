@@ -2,4 +2,4 @@
 local
 *.sw*
 .tidyall.d
-/Webservice-SQLFormat*
+/WebService-SQLFormat*
