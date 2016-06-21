@@ -95,3 +95,25 @@ sub format_sql {
 __END__
 
 # Abstract: Format SQL via the sqlformat.org API
+
+=head1 DESCRIPTION
+
+BETA BETA BETA.  Subject to change.
+
+This module is a thin wrapper around L<http://sqlformat.org>
+
+=head1 SYNOPSIS
+
+    use strict;
+    use warnings;
+    use feature qw( say );
+
+    use WebService::SQLFormat;
+    my $formatter = WebService::SQLFormat->new(
+        identifier_case => 'upper',
+        reindent        => 1,
+    );
+
+    my $sql = shift @ARGV;
+
+    say $formatter->format_sql($sql);
