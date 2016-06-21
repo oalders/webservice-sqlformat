@@ -94,7 +94,7 @@ sub format_sql {
 1;
 __END__
 
-# Abstract: Format SQL via the sqlformat.org API
+# ABSTRACT: Format SQL via the sqlformat.org API
 
 =head1 DESCRIPTION
 
