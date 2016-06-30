@@ -1,13 +1,23 @@
+#!/usr/bin/env perl
+
 use strict;
 use warnings;
-use feature qw( say );
 
 use WebService::SQLFormat;
+
 my $formatter = WebService::SQLFormat->new(
     identifier_case => 'upper',
     reindent        => 1,
 );
 
-my $sql = shift @ARGV;
+my $in;
 
-say $formatter->format_sql($sql);
+while (<STDIN>) {
+    $in .= $_;
+}
+
+$in ||= shift @ARGV;
+
+die 'No SQL found' unless $in;
+
+print $formatter->format_sql($in);
