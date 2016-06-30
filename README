@@ -2,7 +2,7 @@ NAME
     WebService::SQLFormat - Format SQL via the sqlformat.org API
 
 VERSION
-    version 0.000003
+    version 0.000004
 
 SYNOPSIS
         use strict;
