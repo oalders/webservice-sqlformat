@@ -1,10 +1,11 @@
 requires "JSON::MaybeXS" => "0";
-requires "LWP::ConsoleLogger::Easy" => "0";
 requires "LWP::UserAgent" => "0";
+requires "Module::Runtime" => "0";
 requires "Moo" => "0";
 requires "Types::Standard" => "0";
 requires "Types::URI" => "0";
 requires "perl" => "5.006";
+recommends "LWP::ConsoleLogger" => "0.000028";
 
 on 'build' => sub {
   requires "Module::Build" => "0.28";

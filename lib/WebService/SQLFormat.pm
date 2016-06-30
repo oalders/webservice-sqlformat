@@ -4,6 +4,7 @@ use Moo;
 
 use JSON::MaybeXS qw( decode_json );
 use LWP::UserAgent ();
+use Module::Runtime qw( use_module );
 use Types::Standard qw( Bool InstanceOf Int Str );
 use Types::URI qw( Uri );
 
@@ -59,7 +60,7 @@ sub _build_ua {
     my $ua   = LWP::UserAgent->new;
     return $ua unless $self->debug_level;
 
-    require LWP::ConsoleLogger::Easy;
+    use_module( 'LWP::ConsoleLogger::Easy', 0.000028 );
     LWP::ConsoleLogger::Easy::debug_ua( $ua, $self->debug_level );
     return $ua;
 }
