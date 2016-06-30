@@ -13,7 +13,6 @@ before_install:
   - source ~/travis-perl-helpers/init
   - build-perl
   - perl -V
-  - cpanm LWP::ConsoleLogger
 script:
   - "prove -lr t"
 notifications:
