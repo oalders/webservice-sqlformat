@@ -86,7 +86,7 @@ sub format_sql {
             strip_comments => $self->strip_comments,
         }
     );
-    return decode_json( $res->decoded_content );
+    return decode_json( $res->decoded_content )->{result};
 }
 
 1;
