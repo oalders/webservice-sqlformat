@@ -1,6 +1,8 @@
 Revision history for WebService-SQLFormat
 
 {{$NEXT}}
+    - Add sqlformat script.
+    - Return the result key from format_sql() rather than a hashref.
 
 0.000001  2016-06-21 17:05:43-04:00 America/Toronto
     - Initial release.
