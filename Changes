@@ -1,6 +1,7 @@
 Revision history for WebService-SQLFormat
 
 {{$NEXT}}
+    - Renames sqlformat script to sql-webformat.
 
 0.000002  2016-06-30 15:45:10-04:00 America/Toronto
     - Add sqlformat script.
