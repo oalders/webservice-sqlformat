@@ -12,8 +12,8 @@ on 'build' => sub {
 };
 
 on 'test' => sub {
-  requires "DDP" => "0";
   requires "Test2::Bundle::More" => "0";
+  requires "Test::RequiresInternet" => "0";
   requires "perl" => "5.006";
   requires "strict" => "0";
   requires "warnings" => "0";
