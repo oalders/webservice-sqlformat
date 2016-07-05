@@ -1,6 +1,7 @@
 Revision history for WebService-SQLFormat
 
 {{$NEXT}}
+    - Disable debugging in tests unless it's an author test.
 
 0.000004  2016-06-30 16:44:33-04:00 America/Toronto
 
