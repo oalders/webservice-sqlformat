@@ -1,5 +1,6 @@
 .build
 local
+scratch
 *.sw*
 .tidyall.d
 /WebService-SQLFormat*
