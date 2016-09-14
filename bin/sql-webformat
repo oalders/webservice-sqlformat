@@ -21,3 +21,5 @@ $in ||= shift @ARGV;
 die 'No SQL found' unless $in;
 
 print $formatter->format_sql($in);
+
+# PODNAME: sql-webformat
