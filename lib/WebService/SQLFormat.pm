@@ -1,6 +1,6 @@
 package WebService::SQLFormat;
 
-use Moo;
+use Moo 2.002004;
 
 use JSON::MaybeXS qw( decode_json );
 use LWP::UserAgent ();
