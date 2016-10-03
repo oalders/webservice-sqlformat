@@ -6,7 +6,7 @@ WebService::SQLFormat - Format SQL via the sqlformat.org API
 
 # VERSION
 
-version 0.000006
+version 0.000007
 
 # SYNOPSIS
 
@@ -28,7 +28,7 @@ version 0.000006
 
 BETA BETA BETA.  Subject to change.
 
-This module is a thin wrapper around [http://sqlformat.org](http://sqlformat.org)
+This module is a thin wrapper around [https://sqlformat.org](https://sqlformat.org)
 
 # AUTHOR
 

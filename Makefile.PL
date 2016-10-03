@@ -33,7 +33,7 @@ my %WriteMakefileArgs = (
     "Test2::Bundle::More" => 0,
     "Test::RequiresInternet" => 0
   },
-  "VERSION" => "0.000006",
+  "VERSION" => "0.000007",
   "test" => {
     "TESTS" => "t/*.t t/WebService/*.t"
   }
