@@ -52,7 +52,7 @@ has url => (
     isa     => Uri,
     coerce  => 1,
     lazy    => 1,
-    default => 'http://sqlformat.org/api/v1/format',
+    default => 'https://sqlformat.org/api/v1/format',
 );
 
 sub _build_ua {
@@ -99,7 +99,7 @@ __END__
 
 BETA BETA BETA.  Subject to change.
 
-This module is a thin wrapper around L<http://sqlformat.org>
+This module is a thin wrapper around L<https://sqlformat.org>
 
 =head1 SYNOPSIS
 
