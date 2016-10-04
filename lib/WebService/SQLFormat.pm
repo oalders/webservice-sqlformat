@@ -116,3 +116,47 @@ This module is a thin wrapper around L<https://sqlformat.org>
     my $sql = shift @ARGV;
 
     say $formatter->format_sql($sql);
+
+=head2 CONSTRUCTOR OPTIONS
+
+=over 4
+
+=item debug_level
+
+An integer between 0 and 8.  Used to set debugging level for
+L<LWP::ConsoleLogger::Easy>.  Defaults to 0.
+
+=item identifier_case
+
+Case to use for SQL identifiers.  One of 'upper', 'lower' or 'capitalize'.  If
+no value is supplied, identifiers will not be changed.
+
+=item keyword_case
+
+Case to use for SQL keywords.  One of 'upper', 'lower' or 'capitalize'.  If no
+value is supplied, case will not be changed.
+
+=item reindent( 0|1)
+
+Re-indent supplied SQL.  Defaults to 0.
+
+=item strip_comments( 0|1 )
+
+Remove SQL comments.  Defaults to 0.
+
+=item ua
+
+You may supply your own user agent.  Must be of the L<LWP::UserAgent> family.
+
+=item url
+
+The API url to query.  Defaults to L<https://sqlformat.org/api/v1/format>
+
+=back
+
+=head2 format_sql( $raw_sql )
+
+This method expects a scalar containing the SQL which you'd like to format.
+Returns the formatted SQL.
+
+=cut
