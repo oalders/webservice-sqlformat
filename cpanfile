@@ -1,4 +1,5 @@
 requires "JSON::MaybeXS" => "0";
+requires "LWP::Protocol::https" => "0";
 requires "LWP::UserAgent" => "0";
 requires "Module::Runtime" => "0";
 requires "Moo" => "2.002004";
