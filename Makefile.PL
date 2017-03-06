@@ -13,9 +13,6 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => 0
   },
   "DISTNAME" => "WebService-SQLFormat",
-  "EXE_FILES" => [
-    "bin/sql-webformat"
-  ],
   "LICENSE" => "perl",
   "MIN_PERL_VERSION" => "5.006",
   "NAME" => "WebService::SQLFormat",
@@ -26,15 +23,15 @@ my %WriteMakefileArgs = (
     "Module::Runtime" => 0,
     "Moo" => "2.002004",
     "Types::Standard" => 0,
-    "Types::URI" => 0,
-    "strict" => 0,
-    "warnings" => 0
+    "Types::URI" => 0
   },
   "TEST_REQUIRES" => {
     "Test2::Bundle::More" => 0,
-    "Test::RequiresInternet" => 0
+    "Test::RequiresInternet" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  "VERSION" => "0.000006",
+  "VERSION" => "0.000007",
   "test" => {
     "TESTS" => "t/*.t t/WebService/*.t"
   }

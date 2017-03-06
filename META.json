@@ -24,7 +24,7 @@
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
-            "perl" : "5.006"
+            "perl" : "5.004"
          }
       },
       "develop" : {
@@ -47,16 +47,16 @@
             "Moo" : "2.002004",
             "Types::Standard" : "0",
             "Types::URI" : "0",
-            "perl" : "5.006",
-            "strict" : "0",
-            "warnings" : "0"
+            "perl" : "5.006"
          }
       },
       "test" : {
          "requires" : {
             "Test2::Bundle::More" : "0",
             "Test::RequiresInternet" : "0",
-            "perl" : "5.006"
+            "perl" : "5.006",
+            "strict" : "0",
+            "warnings" : "0"
          }
       }
    },
@@ -72,7 +72,7 @@
          "web" : "https://github.com/oalders/webservice-sqlformat"
       }
    },
-   "version" : "0.000006",
+   "version" : "0.000007",
    "x_contributors" : [
       "Olaf Alders <olaf@wundersolutions.com>"
    ],

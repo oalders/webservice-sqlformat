@@ -6,18 +6,18 @@ requires "Moo" => "2.002004";
 requires "Types::Standard" => "0";
 requires "Types::URI" => "0";
 requires "perl" => "5.006";
-requires "strict" => "0";
-requires "warnings" => "0";
 
 on 'test' => sub {
   requires "Test2::Bundle::More" => "0";
   requires "Test::RequiresInternet" => "0";
   requires "perl" => "5.006";
+  requires "strict" => "0";
+  requires "warnings" => "0";
 };
 
 on 'configure' => sub {
   requires "ExtUtils::MakeMaker" => "0";
-  requires "perl" => "5.006";
+  requires "perl" => "5.004";
 };
 
 on 'develop' => sub {
