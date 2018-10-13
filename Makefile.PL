@@ -27,6 +27,7 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "Test2::Bundle::More" => 0,
+    "Test::Needs" => 0,
     "Test::RequiresInternet" => 0,
     "strict" => 0,
     "warnings" => 0
