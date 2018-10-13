@@ -5,6 +5,7 @@ use Test::RequiresInternet( 'sqlformat.org' => 80 );
 use Test2::Bundle::More;
 
 use WebService::SQLFormat;
+use Test::Needs { 'LWP::ConsoleLogger::Easy' => '0.000028' };
 
 my $f = WebService::SQLFormat->new( debug_level => $ENV{AUTHOR_TESTING}
         && !$ENV{TRAVIS} ? 11 : 0, reindent => 1, );
