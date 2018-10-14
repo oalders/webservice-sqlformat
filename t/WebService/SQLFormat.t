@@ -18,4 +18,7 @@ my $expected = qq{selecT *\nfrom foo};
 
 is( $got, $expected, 'formats as expected' );
 
+eval { $f->format_sql };
+like($@, qr/missing sql to format/);
+
 done_testing();

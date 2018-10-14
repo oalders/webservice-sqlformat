@@ -69,6 +69,8 @@ sub format_sql {
     my $self = shift;
     my $sql  = shift;
 
+    die "missing sql to format." unless defined $sql;
+
     my $res = $self->ua->post(
         $self->url,
         {
